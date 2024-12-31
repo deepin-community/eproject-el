@@ -1,5 +1,58 @@
-template-repository (1.0-1) unstable; urgency=medium
+eproject-el (1.5+git20180312.068218d-5) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * Rebuild against dh-elpa 2.1.5.
+    Upload pushed to dgit-repos but not salsa.
+    See <https://lists.debian.org/debian-emacsen/2024/07/msg00077.html>.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Sean Whitton <spwhitton@spwhitton.name>  Thu, 25 Jul 2024 20:15:47 +0900
+
+eproject-el (1.5+git20180312.068218d-4) unstable; urgency=medium
+
+  * Update my email address.
+  * Drop version qualifier for emacs Recommends, because even oldoldstable has
+    the required version.
+  * Declare Standards-Version: 4.6.2 (no changes required).
+
+ -- Nicholas D Steeves <sten@debian.org>  Fri, 17 Feb 2023 20:43:04 -0500
+
+eproject-el (1.5+git20180312.068218d-3) unstable; urgency=medium
+
+  * Rebuild with dh-elpa 2.0.
+  * Migrate to debhelper-compat 13.
+  * Add Rules-Requires-Root: no.
+  * Drop Enhances emacs25, because the package does not exist in bullseye.
+  * Update my copyright years.
+  * Add debian/source/lintian-overrides to override
+    missing-debian-watch-file-standard.  See comment in header for further
+    information.
+  * Declare Standards-Version: 4.5.1 (no changes required).
+
+ -- Nicholas D Steeves <nsteeves@gmail.com>  Sun, 06 Dec 2020 18:21:48 -0500
+
+eproject-el (1.5+git20180312.068218d-2) unstable; urgency=medium
+
+  * debian/control: Fix Vcs links, and add Homepage.
+  * debian/copyright:
+    - Add Source field.
+    - Add comment that links to upstream PR for this project's LICENSE,
+      and quotes the relevant portions of the discussion.
+      Thanks to Chris Lamb for this tip.
+    - Fix old FSF address, use standard formatting, and add
+      "On Debian systems, the complete text..." stanza.
+  * Drop 0001-Add-full-text-copy-of-GPL-2-and-GPL-3.patch.
+    - It is no longer needed with the above changes to debian/copyright.
+  * debian/watch: Document that upstream does not provide tarballs or tags
+    and that the watch line is expected to fail.  Disable polling for
+    something known to fail, because this saves resources.
+  * Switch to debhelper-compat and drop debian/compat.
+  * Add 2019 to the range of my copyright years.
+  * Declare Standards-Version: 4.3.0. (No additional changes required)
+
+ -- Nicholas D Steeves <nsteeves@gmail.com>  Sat, 23 Feb 2019 00:31:11 -0700
+
+eproject-el (1.5+git20180312.068218d-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #904157)
+
+ -- Nicholas D Steeves <nsteeves@gmail.com>  Fri, 27 Jul 2018 23:43:32 -0400

@@ -1,0 +1,11 @@
+# Please note: this watch file is included in the hopes that upstream
+# will begin tagging their releases.  At this time upstream does not
+# provide release tarballs or tags and so uscan will "warn: In
+# debian/watch no matching files for watch line".  The watch line has
+# been consequently been disabled to save resources polling something
+# known to fail.
+
+# version=4
+# opts="filenamemangle=s/(?:.*?)?v?(\d[\d.]*)\.tar\.gz/eproject-$1.tar.gz/" \
+#     https://github.com/jrockway/eproject/tags \
+#     (?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate

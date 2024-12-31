@@ -1,22 +1,92 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Upstream-Name: eproject
+Source: https://github.com/jrockway/eproject
 
 Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
+Copyright: 2008-2018  Jonathan Rockway <jon@jrock.us>
+License: GPL-3+
+Comment:
+ The majority of this project is GPL-3+.  A pull request that includes a
+ full-text copy of the GPL-3+ as "LICENSE" was filed upstream at the
+ following URL: https://github.com/jrockway/eproject/pull/71
+
+Files: eproject.el
+Copyright: 2008, 2009  Jonathan Rockway <jon@jrock.us>
 License: GPL-2+
- This package is free software; you can redistribute it and/or modify
+Comment:
+ While the project as a whole is GPL-3+, a full-text copy of GPL-2+ should
+ be also be included so anyone can verify compatibility without  having to
+ look elsewhere for the full-text license.  A pull request that includes a
+ full-text copy of the GPL-2+ as "LICENSE.GPL-2" was filed upstream at the
+ following URL: https://github.com/jrockway/eproject/pull/71
+
+Files: contrib/eproject-anything.el
+Copyright: 2011  Antono Vasiljev <self@antono.info>
+License: GPL-3+
+
+Files: contrib/eproject-compile.el
+Copyright: 2009  Jonathan Rockway
+           2012  Alex Bennée
+License: GPL-3+
+
+Files: contrib/eproject.sh
+Copyright: 2012  Takafumi Arakaki <aka.tkf at gmail.com>
+License: GPL-3+
+
+Files: contrib/eproject-tasks.el
+Copyright: 2012  Takafumi Arakaki <aka.tkf at gmail.com>
+License: GPL-3+
+
+Files: contrib/helm-eproject.el
+Copyright: 2012  Glauber Alex Dias Prado <smade4@gmail.com>
+           2012  Thomas Frössman <thomasf@jossystem.se>
+License: GPL-3+
+Comment:
+ Glauber Prado and Thomas Frössman's probable copyright was established by
+ examining the upstream git history. I opened an upstream issue titled
+ "contrib/helm-eproject: Needs Copyright header" with the following text:
+ > By examining the git history I found that Glauber Alex Dias Prado and
+ > Thomas Frössmam both committed more than 15 lines of changes to this
+ > file in 2012. If they didn't attribute copyright to you, please add a
+ > copyright header with their information. If they did attribute it to
+ > you, please make this explicit by adding yourself to the file's
+ > copyright header. It's ambiguous right now.
+ https://github.com/jrockway/eproject/issues/72
+
+Files: debian/*
+Copyright: 2018-2021  Nicholas D Steeves <sten@debian.org>
+License: GPL-3+
+
+License: GPL-3+
+ This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
+ the Free Software Foundation, either version 3 of the License, or
  (at your option) any later version.
  .
- This package is distributed in the hope that it will be useful,
+ This program is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  GNU General Public License for more details.
  .
  You should have received a copy of the GNU General Public License
- along with this program. If not, see <https://www.gnu.org/licenses/>
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  .
  On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ Public License version 3 can be found in `/usr/share/common-licenses/GPL-3'
+
+License: GPL-2+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in `/usr/share/common-licenses/GPL-2'
